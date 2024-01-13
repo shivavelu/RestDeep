@@ -1,0 +1,41 @@
+# Gradle
+.gradle
+/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# Java
+*.class
+.mtj.tmp/
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+# Rest-Assured (if any specific files to ignore)
+
+# IDE-specific files
+.idea/
+.project
+.classpath
+.settings/
+*.iml
+
+# Log files
+*.log
+
+# Other temporary files
+out/
+
+# macOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+
+# Additional files you may want to ignore
+*~
+*.bak
+*.swp
