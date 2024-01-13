@@ -1,0 +1,40 @@
+200
+X-Powered-By=tinyhttp
+Access-Control-Allow-Origin=*
+BAccess-Control-Allow-Methods=GET, HEAD, PUT, PATCH, POST, DELETE
++Access-Control-Allow-Headers=content-type
+Content-Type=application/json
+$Date=Sat, 13 Jan 2024 08:46:58 GMT
+Connection=keep-alive
+Keep-Alive=timeout=5
+Content-Length=369
+X-Powered-By=tinyhttp
+Access-Control-Allow-Origin=*
+BAccess-Control-Allow-Methods=GET, HEAD, PUT, PATCH, POST, DELETE
++Access-Control-Allow-Headers=content-type
+Content-Type=application/json
+$Date=Sat, 13 Jan 2024 08:46:58 GMT
+Connection=keep-alive
+Keep-Alive=timeout=5
+Content-Length=369
+451
+[
+    {
+        "id": "2",
+!        "first_name": "captain",
+        "last_name": "Miller",
+0        "email": "miller@codingthesmartway.com"
+    },
+    {
+        "id": "3",
+        "first_name": "rakul",
+        "last_name": "preet",
+1        "email": "rpsingh@codingthesmartway.com"
+    },
+    {
+        "id": "4",
+        "first_name": "Rashi",
+        "last_name": "Kanna",
+0        "email": "rkanna@codingthesmartway.com"
+    }
+]
