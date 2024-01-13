@@ -4,20 +4,20 @@
 BAccess-Control-Allow-Methods=GET, HEAD, PUT, PATCH, POST, DELETE
 +Access-Control-Allow-Headers=content-type
 Content-Type=application/json
-$Date=Sat, 13 Jan 2024 17:08:41 GMT
+$Date=Sat, 13 Jan 2024 17:42:59 GMT
 Connection=keep-alive
 Keep-Alive=timeout=5
-Content-Length=483
+Content-Length=779
 X-Powered-By=tinyhttp
 Access-Control-Allow-Origin=*
 BAccess-Control-Allow-Methods=GET, HEAD, PUT, PATCH, POST, DELETE
 +Access-Control-Allow-Headers=content-type
 Content-Type=application/json
-$Date=Sat, 13 Jan 2024 17:08:41 GMT
+$Date=Sat, 13 Jan 2024 17:42:59 GMT
 Connection=keep-alive
 Keep-Alive=timeout=5
-Content-Length=483
-452
+Content-Length=779
+436
 [
     {
         "id": "2",
@@ -42,5 +42,24 @@
         "first_name": "Tabu",
          "last_name": "agarwal",
 )        "email": "tabuagr@bollywood.com"
+    },
+    {
+        "id": 29,
+         "first_name": "preeti",
+        "last_name": "zinda",
+*        "email": "preetiz@kollywood.com",
+        "jobs": [
+            "actor",
+            "model"
+        ],
+        "diet": {
+!            "breakfast": "idly",
+            "lunch": "rice",
+            "dinner": [
+                "chappati",
+                "milk"
+            ]
+
+        }
     }
 ]

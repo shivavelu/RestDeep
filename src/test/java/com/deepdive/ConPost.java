@@ -6,9 +6,12 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.*;
@@ -73,7 +76,8 @@ public class ConPost {
     Using map and list from java
     {} -> Map
     [] -> List
-
+     Without databinding library object will not able covert to json (serialization), in this case use jackson databiding
+     That will be added to class path and during run time handled automatically
      */
     @Test
     public void objPost(){
@@ -91,5 +95,59 @@ public class ConPost {
         resp.then().statusCode(201);
         resp.prettyPrint();
 
+    }
+
+    /*
+    Disadvantages of this object pl
+    -- Verbose
+    -- When payload increases tend to make mistake and handling larger and complex is difficult
+    -- generic type needs to be mentioned ( like object type)
+
+     */
+
+    @Test
+    public void objPostwithComplexPL(){
+        /*
+        {
+  "id": "4",
+  "first_name": "Rashi",
+  "last_name": "Kanna",
+  "email": "rkanna@codingthesmartway.com",
+  "jobs":["actor","model"],
+   "diet":{
+      "breakfast":"Idly",
+      "lunch":"Rice",
+      "dinner":["chapati","Milk']
+
+   }
+   }
+         */
+
+        Map<String,Object> pl= new LinkedHashMap<>();
+        pl.put("id",29);
+        pl.put("first_name","preeti");
+        pl.put("last_name","zinda");
+        pl.put("email","preetiz@kollywood.com");
+
+        List<String> jobs= new ArrayList<>();
+        jobs.add("actor");
+        jobs.add("model");
+        pl.put("jobs",jobs);
+        Map<String, Object> diet= new LinkedHashMap<>();
+        diet.put("breakfast","idly");
+        diet.put("lunch","rice");
+        List<String> dinner= new ArrayList<>();
+        dinner.add("chappati");
+        dinner.add("milk");
+        diet.put("dinner",dinner);
+        pl.put("diet",diet);
+
+        Response resp= given()
+                       .log()
+                       .all()
+                       .body(pl)
+                       .post("http://localhost:3000/posts");
+        resp.then().statusCode(201);
+        resp.prettyPrint();
     }
 }
