@@ -8,6 +8,8 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import static io.restassured.RestAssured.*;
 
@@ -67,8 +69,27 @@ public class ConPost {
         resp.prettyPrint();
     }
 
+    /*
+    Using map and list from java
+    {} -> Map
+    [] -> List
+
+     */
     @Test
     public void objPost(){
+
+        Map<String, Object> pl= new LinkedHashMap<>();
+        pl.put("id",25);
+        pl.put("first_name","Tabu");
+        pl.put("last_name","agarwal");
+        pl.put("email","tabuagr@bollywood.com");
+        Response resp= given()
+                .log()
+                .all()
+                .body(pl)
+                .post("http://localhost:3000/posts");
+        resp.then().statusCode(201);
+        resp.prettyPrint();
 
     }
 }
