@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.deepdive.Conreq" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-13T08:46:57" hostname="KAVIYAZHINI" time="1.675">
+<testsuite name="com.deepdive.Conreq" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-13T17:08:40" hostname="KAVIYAZHINI" time="1.798">
   <properties/>
-  <testcase name="getEmployee" classname="com.deepdive.Conreq" time="1.675"/>
+  <testcase name="getEmployee" classname="com.deepdive.Conreq" time="1.798"/>
   <system-out><![CDATA[200
 X-Powered-By=tinyhttp
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, HEAD, PUT, PATCH, POST, DELETE
 Access-Control-Allow-Headers=content-type
 Content-Type=application/json
-Date=Sat, 13 Jan 2024 08:46:58 GMT
+Date=Sat, 13 Jan 2024 17:08:41 GMT
 Connection=keep-alive
 Keep-Alive=timeout=5
-Content-Length=369
+Content-Length=483
 X-Powered-By=tinyhttp
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=GET, HEAD, PUT, PATCH, POST, DELETE
 Access-Control-Allow-Headers=content-type
 Content-Type=application/json
-Date=Sat, 13 Jan 2024 08:46:58 GMT
+Date=Sat, 13 Jan 2024 17:08:41 GMT
 Connection=keep-alive
 Keep-Alive=timeout=5
-Content-Length=369
-451
+Content-Length=483
+452
 [
     {
         "id": "2",
@@ -40,6 +40,12 @@ Content-Length=369
         "first_name": "Rashi",
         "last_name": "Kanna",
         "email": "rkanna@codingthesmartway.com"
+    },
+    {
+        "id": 25,
+        "first_name": "Tabu",
+        "last_name": "agarwal",
+        "email": "tabuagr@bollywood.com"
     }
 ]
 ]]></system-out>

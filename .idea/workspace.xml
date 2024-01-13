@@ -2,6 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b88d533-eec5-43d3-81ec-9b67ac72347b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/deepdive/ConPost.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/deepdive/ConPost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.deepdive.Conreq.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.deepdive.Conreq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.deepdive.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.deepdive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.deepdive.Conreq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.deepdive.Conreq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/deepdive/ConPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/deepdive/ConPost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +35,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -48,26 +69,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Gradle.Conreq.getEmployee">
-    <configuration name="ConPost.StringPost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.deepdive.ConPost.StringPost&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="ConPost.filePost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -94,6 +95,26 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.deepdive.ConPost.fileStringPost&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ConPost.objPost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.deepdive.ConPost.objPost&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -151,10 +172,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Conreq.getEmployee" />
+        <item itemvalue="Gradle.ConPost.objPost" />
+        <item itemvalue="Gradle.ConPost.filePost" />
         <item itemvalue="Gradle.EmployeePOJO.deleteEmployee" />
         <item itemvalue="Gradle.ConPost.fileStringPost" />
-        <item itemvalue="Gradle.ConPost.filePost" />
-        <item itemvalue="Gradle.ConPost.StringPost" />
       </list>
     </recent_temporary>
   </component>
@@ -176,29 +197,29 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="225" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1705079176364" />
-    <state width="1493" height="254" key="GridCell.Tab.0.bottom" timestamp="1705135615787">
+    <state width="1493" height="254" key="GridCell.Tab.0.bottom" timestamp="1705165718250">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="254" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1705135615787" />
-    <state width="1493" height="254" key="GridCell.Tab.0.center" timestamp="1705135615787">
+    <state width="1493" height="254" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1705165718250" />
+    <state width="1493" height="254" key="GridCell.Tab.0.center" timestamp="1705165718250">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="254" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1705135615787" />
-    <state width="1493" height="254" key="GridCell.Tab.0.left" timestamp="1705135615787">
+    <state width="1493" height="254" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1705165718250" />
+    <state width="1493" height="254" key="GridCell.Tab.0.left" timestamp="1705165718250">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="254" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1705135615787" />
-    <state width="1493" height="254" key="GridCell.Tab.0.right" timestamp="1705135615787">
+    <state width="1493" height="254" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1705165718250" />
+    <state width="1493" height="254" key="GridCell.Tab.0.right" timestamp="1705165718250">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="254" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1705135615787" />
+    <state width="1493" height="254" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1705165718250" />
     <state x="281" y="55" key="SettingsEditor" timestamp="1705079149938">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="281" y="55" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1705079149938" />
-    <state x="479" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1705078152123">
+    <state x="479" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1705164127771">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="479" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.816@0.0.1536.816" timestamp="1705078152123" />
+    <state x="479" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.816@0.0.1536.816" timestamp="1705164127771" />
   </component>
 </project>
