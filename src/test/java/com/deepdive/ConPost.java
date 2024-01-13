@@ -66,4 +66,9 @@ public class ConPost {
         resp.then().statusCode(201);
         resp.prettyPrint();
     }
+
+    @Test
+    public void objPost(){
+
+    }
 }
