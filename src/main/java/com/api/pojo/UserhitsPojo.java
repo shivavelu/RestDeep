@@ -2,21 +2,23 @@ package com.api.pojo;
 
 import java.util.List;
 
-public class UserPojo {
+public class UserhitsPojo {
     private Integer id;
     private String first_name;
     private String last_name;
     private String email;
     private List<String> jobs;
     private Diet diet;
+    private List<Hits> hits;
 
-    public UserPojo(Integer id, String first_name, String last_name, String email, List<String> jobs, Diet diet) {
+    public UserhitsPojo(Integer id, String first_name, String last_name, String email, List<String> jobs, Diet diet, List<Hits> hits) {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
         this.email = email;
         this.jobs = jobs;
         this.diet = diet;
+        this.hits= hits;
     }
     public Integer getId() {
         return id;
@@ -64,6 +66,13 @@ public class UserPojo {
 
     public void setDiet(Diet diet) {
         this.diet = diet;
+    }
+
+    public List<Hits> getHits() {
+        return hits;
+    }
+    public void setHits(List<Hits> hits) {
+        this.hits = hits;
     }
 
 

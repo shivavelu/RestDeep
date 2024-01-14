@@ -1,7 +1,6 @@
 package com.deepdive;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.api.pojo.*;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.json.JSONArray;
@@ -9,13 +8,9 @@ import org.json.JSONObject;
 import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static io.restassured.RestAssured.*;
 
@@ -198,6 +193,51 @@ public class ConPost {
         resp.then().statusCode(201);
         resp.prettyPrint();
 
+    }
+
+    @Test
+    public void pojoPost(){
+
+        //Diet diet= new Diet("vegsalad","ricedall",Arrays.asList("chappati","subji")); // dinner object can be replaced with last argument Arrays.aslist
+        List<String> dinner= new ArrayList<>();
+        dinner.add("chapati");
+        dinner.add("subji");
+        Diet diet= new Diet("vegsalad","ricedall",dinner);
+        //UserPojo user= new UserPojo(38, "sada","jeyam", "sada@kollywood.com", Arrays.asList("actress","enterprenur"),diet); // jobs object can replaced with last argument
+        List<String> jobs= new ArrayList<>();
+        jobs.add("actress");
+        jobs.add("enterprenur");
+        UserPojo user= new UserPojo(38, "sada","jeyam", "sada@kollywood.com",jobs,diet);
+
+        Response  resp= given()
+                        .log()
+                        .all()
+                        .body(user)
+                        .post("http://localhost:3000/posts");
+
+        resp.then().statusCode(201);
+        resp.prettyPrint();
+    }
+
+    @Test
+    public void pojoPost2(){
+
+        Hits h1= new Hits(20,7,"2003");
+        Hits h2= new Hits(30, 10, "2005");
+        List<Hits> hits= new ArrayList<>();
+        hits.add(h1);
+        hits.add(h2);
+        Diet diet= new Diet("vegsalad","ricedall",Arrays.asList("chappati","subji")); // dinner object can be replaced with last argument Arrays.aslist
+        UserhitsPojo user= new UserhitsPojo(50, "sada","jeyam", "sada@kollywood.com", Arrays.asList("actress","enterprenur"),diet,
+               hits); // jobs object can replaced with last argument
+        Response  resp= given()
+                .log()
+                .all()
+                .body(user)
+                .post("http://localhost:3000/posts");
+
+        resp.then().statusCode(201);
+        resp.prettyPrint();
     }
 
 }
