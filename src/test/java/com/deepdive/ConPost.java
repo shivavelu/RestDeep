@@ -150,4 +150,17 @@ public class ConPost {
         resp.then().statusCode(201);
         resp.prettyPrint();
     }
+
+     /*
+
+   Jackson lib --> serialize the payload
+   json --> build payload in simple rather using collects map -->{} and List -->[], besides it has built method to set the payload
+   programitcally based on the condition
+   {} -> JsonObject
+
+     */
+ @Test
+    public void objjsonPost(){
+
+    }
 }

@@ -16,6 +16,7 @@ dependencies {
     implementation 'io.rest-assured:rest-assured:5.4.0'
     implementation 'org.testng:testng:7.9.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
+    implementation 'org.json:json:20231013'
 
 }
 
