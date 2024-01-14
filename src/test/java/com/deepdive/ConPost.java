@@ -1,9 +1,12 @@
 package com.deepdive;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.testng.annotations.Test;
-
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Array;
@@ -156,11 +159,45 @@ public class ConPost {
    Jackson lib --> serialize the payload
    json --> build payload in simple rather using collects map -->{} and List -->[], besides it has built method to set the payload
    programitcally based on the condition
-   {} -> JsonObject
+   {} --> JsonObject
+   [] --> JsonArray
+   Generics will be handled by Json lib.
 
      */
- @Test
+    @Test
     public void objjsonPost(){
 
+        JSONObject pl= new JSONObject();
+        pl.put("id",30);
+        pl.put("first_name","Trisha");
+        pl.put("last_name","Krishan");
+        pl.put("email","trishak@tollywood.com");
+
+        JSONArray jobs= new JSONArray();
+        jobs.put("actor");
+        jobs.put("model");
+        pl.put("jobs",jobs);
+
+        JSONObject diet= new JSONObject();
+        diet.put("breakfast","dosa");
+        diet.put("lunch", "meals");
+        JSONArray dinner= new JSONArray();
+        dinner.put("dryfruit");
+        dinner.put("milk");
+        diet.put("dinner",dinner);
+
+        pl.put("diet",diet);
+
+        Response resp= given()
+                .header("Content-Type","application/json").header("Accept","application/json")
+                .log()
+                .all()
+                .body(pl.toString()) // pl.toMap() ->(Jackson), pl.toString()-> (json)without convert to toString it will pass empty value either needs to covert toString() using json and convert to toMap() using jackson
+                .post("http://localhost:3000/posts");
+
+        resp.then().statusCode(201);
+        resp.prettyPrint();
+
     }
+
 }
