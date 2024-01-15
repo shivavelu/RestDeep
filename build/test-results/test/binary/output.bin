@@ -10,37 +10,37 @@
 Cookies:		<none>
 Multiparts:		<none>
 Body:
-˜{"id":50,"first_name":"sada","last_name":"jeyam","email":"sada@kollywood.com","jobs":["actress","enterprenur"],"diet":{"breakfast":"vegsalad","lunch":"ricedall","dinner":["chappati","subji"]},"hits":[{"tamil":20,"telugu":7,"year":"2003"},{"tamil":30,"telugu":10,"year":"2005"}]}
+›{"id":128,"first_name":"priyanka","last_name":"chopra","email":"prinyanka@kollywood.com","jobs":["Actor","SocialActivist"],"food":{"breakfast":"dosa","lunch":"meals","dinner":["idly","milk"]},"blockFusters":[{"tamil":20,"telugu":5,"year":200},{"tamil":15,"telugu":10,"year":2003}]}
 {
-    "id": 50,
-    "first_name": "sada",
-    "last_name": "jeyam",
-#    "email": "sada@kollywood.com",
+    "id": 128,
+    "first_name": "priyanka",
+    "last_name": "chopra",
+(    "email": "prinyanka@kollywood.com",
     "jobs": [
-        "actress",
-        "enterprenur"
+        "Actor",
+        "SocialActivist"
     ],
-    "diet": {
-!        "breakfast": "vegsalad",
-        "lunch": "ricedall",
+    "food": {
+        "breakfast": "dosa",
+        "lunch": "meals",
         "dinner": [
-            "chappati",
-            "subji"
+            "idly",
+            "milk"
 
         ]
     },
-    "hits": [
+    "blockFusters": [
 
         {
             "tamil": 20,
-            "telugu": 7,
-            "year": "2003"
+            "telugu": 5,
+            "year": 200
         },
 
         {
-            "tamil": 30,
+            "tamil": 15,
             "telugu": 10,
-            "year": "2005"
+            "year": 2003
 
         }
     ]
