@@ -1,46 +1,14 @@
-Request method:	POST
-*Request URI:	http://localhost:3000/posts
+Request method:	PUT
+.Request URI:	http://localhost:3000/posts/150
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	<none>
+Path params:	id=150
 Headers:		Accept=*/*
 1				Content-Type=text/plain; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:
-ä{"id":128,"first_name":"priyanka","jobs":["Actor","SocialActivist"],"food":{"breakfast":"dosa","lunch":"meals","dinner":["idly","milk"]},"blockFusters":[{"tamil":20,"telugu":5,"year":200},{"tamil":15,"telugu":10,"year":2003}]}
-{
-    "id": 128,
-    "first_name": "priyanka",
-    "jobs": [
-        "Actor",
-        "SocialActivist"
-    ],
-    "food": {
-        "breakfast": "dosa",
-        "lunch": "meals",
-        "dinner": [
-            "idly",
-            "milk"
-
-        ]
-    },
-    "blockFusters": [
-
-        {
-            "tamil": 20,
-            "telugu": 5,
-            "year": 200
-        },
-
-        {
-            "tamil": 15,
-            "telugu": 10,
-            "year": 2003
-
-        }
-    ]
-}
-…Employee(id=128, first_name=priyanka, last_name=null, email=null, jobs=[Actor, SocialActivist], food=Food(breakfast=dosa, lunch=meals, dinner=[idly, milk]), blockFusters=[BlockFuster(tamil=20, telugu=5, year=200), BlockFuster(tamil=15, telugu=10, year=2003)])
+\{"id":150,"first_name":"Rajini","second_name":"kanth","email":"rajinikanth@kollywood.com"}
+Not Found
