@@ -13,5 +13,6 @@ public class BlockFuster {
     private int telugu;
     private int year;
 
-
+    public BlockFuster() {
+    }
 }

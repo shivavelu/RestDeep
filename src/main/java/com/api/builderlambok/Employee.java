@@ -32,4 +32,6 @@ public class Employee {
     //@JsonIgnore you can ignore this properperty during payload passing
     private List<BlockFuster> blockFusters;
 
+    public Employee() {
+    }
 }

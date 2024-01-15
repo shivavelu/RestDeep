@@ -13,7 +13,7 @@ public class ConDelete {
         Response resp= given()
                        .log()
                        .all()
-                       .delete("http://localhost:3000/posts/126");
+                       .delete("http://localhost:3000/posts/130");
         System.out.println(resp.statusCode());
     }
 }
