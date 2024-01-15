@@ -11,16 +11,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/deepdive/Conreq.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/deepdive/Conreq.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.deepdive.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/deepdive/Conreq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/deepdive/Conreq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/builderlambok/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/builderlambok/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/coreconcepts/seridesri/TestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/coreconcepts/seridesri/TestBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,26 +99,7 @@
       <recent name="com.api.pojo" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestBuilder.builder5">
-    <configuration name="Apis [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.TestBuilder.builder6">
     <configuration name="Conreq.getEmployee" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -202,13 +180,33 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="TestBuilder.builder6" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.coreconcepts.seridesri.TestBuilder.builder6&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestBuilder.builder6" />
         <item itemvalue="Gradle.TestBuilder.builder5" />
         <item itemvalue="Gradle.TestBuilder.builder4" />
         <item itemvalue="Gradle.Conreq.getEmployee" />
         <item itemvalue="Gradle.TestBuilder.builder3" />
-        <item itemvalue="Gradle.Apis [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -242,22 +240,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="550" y="167" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1705234480822" />
-    <state width="1493" height="234" key="GridCell.Tab.0.bottom" timestamp="1705250358189">
+    <state width="1493" height="234" key="GridCell.Tab.0.bottom" timestamp="1705277902124">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="234" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1705250358189" />
-    <state width="1493" height="234" key="GridCell.Tab.0.center" timestamp="1705250358189">
+    <state width="1493" height="234" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1705277902124" />
+    <state width="1493" height="234" key="GridCell.Tab.0.center" timestamp="1705277902119">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="234" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1705250358189" />
-    <state width="1493" height="234" key="GridCell.Tab.0.left" timestamp="1705250358189">
+    <state width="1493" height="234" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1705277902119" />
+    <state width="1493" height="234" key="GridCell.Tab.0.left" timestamp="1705277902119">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="234" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1705250358189" />
-    <state width="1493" height="234" key="GridCell.Tab.0.right" timestamp="1705250358189">
+    <state width="1493" height="234" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1705277902119" />
+    <state width="1493" height="234" key="GridCell.Tab.0.right" timestamp="1705277902123">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="234" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1705250358189" />
+    <state width="1493" height="234" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1705277902123" />
     <state x="281" y="55" key="SettingsEditor" timestamp="1705235297717">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

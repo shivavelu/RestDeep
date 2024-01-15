@@ -10,12 +10,10 @@
 Cookies:		<none>
 Multiparts:		<none>
 Body:
-›{"id":128,"first_name":"priyanka","last_name":"chopra","email":"prinyanka@kollywood.com","jobs":["Actor","SocialActivist"],"food":{"breakfast":"dosa","lunch":"meals","dinner":["idly","milk"]},"blockFusters":[{"tamil":20,"telugu":5,"year":200},{"tamil":15,"telugu":10,"year":2003}]}
+ä{"id":128,"first_name":"priyanka","jobs":["Actor","SocialActivist"],"food":{"breakfast":"dosa","lunch":"meals","dinner":["idly","milk"]},"blockFusters":[{"tamil":20,"telugu":5,"year":200},{"tamil":15,"telugu":10,"year":2003}]}
 {
     "id": 128,
     "first_name": "priyanka",
-    "last_name": "chopra",
-(    "email": "prinyanka@kollywood.com",
     "jobs": [
         "Actor",
         "SocialActivist"
@@ -45,3 +43,4 @@
         }
     ]
 }
+…Employee(id=128, first_name=priyanka, last_name=null, email=null, jobs=[Actor, SocialActivist], food=Food(breakfast=dosa, lunch=meals, dinner=[idly, milk]), blockFusters=[BlockFuster(tamil=20, telugu=5, year=200), BlockFuster(tamil=15, telugu=10, year=2003)])

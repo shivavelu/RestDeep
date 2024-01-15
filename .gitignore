@@ -1,6 +1,5 @@
 # Gradle
-*.gradle
-**/build/
+.gradle/*
 gradle-app.setting
 !gradle-wrapper.jar
 .gradletasknamecache
@@ -14,16 +13,19 @@ gradle-app.setting
 *.nar
 hs_err_pid*
 *.bin
+.build/*
+.target/*
 
 # Rest-Assured (if any specific files to ignore)
 
 # IDE-specific files
-*.idea/
+.idea/*
 .project
 .classpath
 .settings/
 *.iml
 *.xml
+ .idea/workspace.xml
 
 # Log files
 *.log
