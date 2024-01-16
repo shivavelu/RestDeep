@@ -6,6 +6,7 @@ import com.api.builderlambok.Food;
 import com.api.lombk.Actor;
 import com.api.builerpat.Student;
 import com.api.builerpat.StudentBuilder;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -83,5 +84,19 @@ public class TestBuilder {
         resp.then().statusCode(201);
         resp.prettyPrint();
 
+    }
+    @Test //Jackson annotation validation
+    public void builder6(){
+        Employee ee= Employee.builder().id(129).first_name("priyanka").last_name(null)
+                .email(null).jobs(Arrays.asList("Actor","SocialActivist"))
+                .food(new Food("dosa","meals", Arrays.asList("idly","milk")))
+                .blockFusters(Arrays.asList(new BlockFuster(20,5,200), new BlockFuster(15,10,2003))).build();
+        Response resp= given()
+                .log()
+                .all()
+                .body(ee)
+                .post("http://localhost:3000/posts");
+        resp.then().statusCode(201);
+        resp.prettyPrint();
     }
 }

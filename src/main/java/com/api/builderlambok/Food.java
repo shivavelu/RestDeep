@@ -14,4 +14,7 @@ public class Food {
     private String breakfast;
     private String lunch;
     private List<String> dinner;
+
+    public Food() {
+    }
 }
