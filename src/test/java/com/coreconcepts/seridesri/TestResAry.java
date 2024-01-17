@@ -1,10 +1,9 @@
 package com.coreconcepts.seridesri;
 
+import com.api.builderlambok.Employee;
 import com.api.lombk.CountryCode;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.restassured.mapper.ObjectMapperDeserializationContext;
-import io.restassured.mapper.ObjectMapperSerializationContext;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -27,7 +26,6 @@ public class TestResAry {
        ObjectMapper ob= new ObjectMapper();
        CountryCode[] cc = ob.readValue(resp.asString(), CountryCode[].class);
        Arrays.stream(cc).forEach(System.out::println);
-
 
     }
 }
