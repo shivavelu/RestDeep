@@ -31,4 +31,21 @@ public class TestResdesiri {
         System.out.println(resp.jsonPath().getInt("blockFusters[0].tamil"));
     }
 
+    @Test //Response validation by desielaization by restassured as() and jsonpath()
+    public void builder7(){
+        Employee ee= Employee.builder().id(132).first_name("poonam").last_name("bajwa")
+                .email("bb@tollywood.com").jobs(Arrays.asList("Actor","SocialActivist"))
+                .food(new Food("dosa","meals", Arrays.asList("idly","milk")))
+                .blockFusters(Arrays.asList(new BlockFuster(20,5,200), new BlockFuster(15,10,2003))).build();
+        Response resp= given()
+                .log()
+                .all()
+                .body(ee)
+                .post("http://localhost:3000/posts");
+        resp.then().statusCode(201);
+        Employee[] emp = resp.as(Employee[].class); // Mapping json response to respective class object
+        Arrays.stream(emp).forEach(System.out::println);
+
+    }
+
 }
