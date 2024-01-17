@@ -21,6 +21,7 @@ dependencies {
     implementation 'org.jetbrains:annotations:15.0'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
     compileOnly 'org.projectlombok:lombok:1.18.30'
+    implementation 'io.rest-assured:json-schema-validator:5.4.0'
 
 }
 

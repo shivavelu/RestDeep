@@ -23,7 +23,7 @@ public class Conreq {
     @Test
     public void getEmployee(){
 
-        Response employees=given().when().get("http://localhost:3000/posts/126");
+        Response employees=given().when().get("http://localhost:3000/posts/155");
         employees.then().statusCode(200);
         System.out.println(employees.statusCode());
         employees.getHeaders().asList().stream().forEach(header->{
