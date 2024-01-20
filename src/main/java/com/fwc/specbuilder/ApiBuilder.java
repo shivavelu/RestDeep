@@ -16,7 +16,7 @@ public final class ApiBuilder {
 
     public static RequestSpecification reqSpecBuilderGet(){
         return given()
-                .baseUri(PropertyUtils.getMapValue(ConfigEnum.BASEURI))
+                .baseUri(PropertyUtils.getMapValue(ConfigEnum.BASEURL))
                 .log().all();
     }
 
