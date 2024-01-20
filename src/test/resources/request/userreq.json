@@ -1,0 +1,30 @@
+{
+  "id": 500,
+  "first_name": "$fname$",
+  "last_name": "$lname$",
+  "email": "shreya@kollywood.com",
+  "jobs": [
+    "actress",
+    "model"
+  ],
+  "food": {
+    "breakfast": "Noodles",
+    "lunch": "chappati",
+    "dinner": [
+      "dos",
+      "dryfruit"
+    ]
+  },
+  "blockFusters": [
+    {
+      "tamil": 7,
+      "telugu": 15,
+      "year": 2004
+    },
+    {
+      "tamil": 5,
+      "telugu": 10,
+      "year": 2005
+    }
+  ]
+}
