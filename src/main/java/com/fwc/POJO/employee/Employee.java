@@ -9,6 +9,7 @@ import java.util.List;
 @Builder(setterPrefix = "set")
 @ToString
 @AllArgsConstructor
+//@Data
 public class Employee {
 
     private int id;
@@ -16,6 +17,6 @@ public class Employee {
     private String last_name;
     private String email;
     private List<Integer> salary;
-    public Employee(){}
+    //public Employee(){}
 
 }

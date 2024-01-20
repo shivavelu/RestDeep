@@ -1,5 +1,7 @@
 package com.fwc.specbuilder;
 
+import com.fwc.Utils.PropertyUtils;
+import com.fwc.enums.ConfigEnum;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
@@ -14,7 +16,7 @@ public final class ApiBuilder {
 
     public static RequestSpecification reqSpecBuilderGet(){
         return given()
-                .baseUri("http://localhost:3000")
+                .baseUri(PropertyUtils.getMapValue(ConfigEnum.BASEURI))
                 .log().all();
     }
 
