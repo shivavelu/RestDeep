@@ -1,5 +1,6 @@
 package com.fwc.Utils;
 
+import com.fwc.constants.FrameworkConstants;
 import com.fwc.enums.ConfigEnum;
 
 import java.io.File;
@@ -7,6 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.LinkedHashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
 
@@ -19,7 +21,7 @@ public class PropertyUtils {
 
     static{
 
-        try( FileInputStream fs= new FileInputStream("")) {
+        try( FileInputStream fs= new FileInputStream(FrameworkConstants.getPROPERTY_FILEPATH())) {
             properties.load(fs);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -31,7 +33,8 @@ public class PropertyUtils {
     }
 
     public static String getMapValue(ConfigEnum key){
-        return map.get(key);
+        System.out.println(map.get(key.toString().toLowerCase()));
+        return map.get(key.toString().toLowerCase());
     }
 
 }

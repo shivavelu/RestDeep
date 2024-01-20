@@ -19,7 +19,7 @@ public final class ApiUtils {
     }
     @SneakyThrows
     public static String readJsonToString(String filePath){
-        return new String(Files.readAllBytes(Paths.get(System.getProperty("user.dir")+filePath)));
+        return new String(Files.readAllBytes(Paths.get(filePath)));
     }
 
     @SneakyThrows

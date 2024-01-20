@@ -16,7 +16,7 @@ public class TestExtfile {
 
     @Test
     public void postRequestUsingExternalFile(){
-        String ss = ApiUtils.modifyFilePayloadNode("userreq.json", "id", "501");
+        String ss = ApiUtils.modifyFilePayloadNode("userreq.json", "id", "503");
 
         Response resp= ApiBuilder
                        .reqSpecBuilderPost()
@@ -32,11 +32,10 @@ public class TestExtfile {
     public void postRequestExtProp(){
 
         String ss = ApiUtils.readJsonToString(FCSingleton.getInstance().getRequestInputPath() + "userreq.json");
-
         Response resp= ApiBuilder
                        .reqSpecBuilderPost()
                        .body(ss)
-                       .post("/posts");
+                               .post("/posts");
 
         resp.prettyPrint();
         Assertions.assertThat(resp.getStatusCode()).isEqualTo(201);

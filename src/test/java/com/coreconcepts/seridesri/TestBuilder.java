@@ -87,7 +87,7 @@ public class TestBuilder {
     }
     @Test //Jackson annotation validation
     public void builder6(){
-        Employee ee= Employee.builder().id(129).first_name("priyanka").last_name(null)
+        Employee ee= Employee.builder().id(132).first_name("priyanka").last_name(null)
                 .email(null).jobs(Arrays.asList("Actor","SocialActivist"))
                 .food(new Food("dosa","meals", Arrays.asList("idly","milk")))
                 .blockFusters(Arrays.asList(new BlockFuster(20,5,200), new BlockFuster(15,10,2003))).build();

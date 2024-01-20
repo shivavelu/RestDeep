@@ -20,5 +20,5 @@ public class FCSingleton {
         }
         return FCInstance;
     }
-    private final String requestInputPath=System.getProperty("user.dir")+"/src/test/resources/requests/";
+    private final String requestInputPath=System.getProperty("user.dir")+"/src/test/resources/request/";
 }
