@@ -23,9 +23,9 @@ public class TestResAry {
         Arrays.stream(code).forEach(System.out::println);
 
         /* Object Mapper using jackson*/
-       ObjectMapper ob= new ObjectMapper();
+    /*   ObjectMapper ob= new ObjectMapper();
        CountryCode[] cc = ob.readValue(resp.asString(), CountryCode[].class);
-       Arrays.stream(cc).forEach(System.out::println);
+       Arrays.stream(cc).forEach(System.out::println);*/
 
     }
 }

@@ -3,6 +3,11 @@ package com.coreconcepts.seridesri;
 import com.api.builderlambok.BlockFuster;
 import com.api.builderlambok.Employee;
 import com.api.builderlambok.Food;
+import com.aventstack.extentreports.markuputils.CodeLanguage;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.base.BaseTest;
+import com.reports.ExtentManager;
+import com.reports.ExtentReport;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -10,7 +15,7 @@ import java.util.Arrays;
 
 import static io.restassured.RestAssured.given;
 
-public class TestResdesiri {
+public class TestResdesiri extends BaseTest {
     @Test //Response validation by desielaization by restassured as() and jsonpath()
     public void builder6(){
         Employee ee= Employee.builder().id(131).first_name("poonam").last_name("bajwa")
@@ -24,6 +29,7 @@ public class TestResdesiri {
                 .post("http://localhost:3000/posts");
         resp.then().statusCode(201);
         resp.prettyPrint();
+        ExtentManager.getTest().pass((MarkupHelper.createCodeBlock(resp.prettyPrint(), CodeLanguage.JSON)));
         Employee emp = resp.as(Employee.class); // Mapping json response to respective class object
         emp.getFood().getDinner().stream().forEach(System.out::println);
         System.out.println(emp.getJobs().get(1));
@@ -31,7 +37,7 @@ public class TestResdesiri {
         System.out.println(resp.jsonPath().getInt("blockFusters[0].tamil"));
     }
 
-    @Test //Response validation by desielaization by restassured as() and jsonpath()
+   // @Test //Response validation by desielaization by restassured as() and jsonpath()
     public void builder7(){
         Employee ee= Employee.builder().id(132).first_name("poonam").last_name("bajwa")
                 .email("bb@tollywood.com").jobs(Arrays.asList("Actor","SocialActivist"))

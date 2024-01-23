@@ -36,7 +36,6 @@ public class TestExtfile {
                        .reqSpecBuilderPost()
                        .body(ss)
                                .post("/posts");
-
         resp.prettyPrint();
         Assertions.assertThat(resp.getStatusCode()).isEqualTo(201);
     }

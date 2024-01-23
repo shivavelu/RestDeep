@@ -7,12 +7,13 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 @Builder
+@RequiredArgsConstructor
 public class CountryCode {
     private int bookingid;
 
-    public CountryCode() {
+ /*   public CountryCode() {
 
-    }
+    }*/
 
 
 }

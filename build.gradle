@@ -23,6 +23,7 @@ dependencies {
     implementation 'io.rest-assured:json-schema-validator:5.4.0'
     testImplementation 'org.assertj:assertj-core:3.25.1'
     implementation 'com.github.javafaker:javafaker:1.0.2'
+    implementation 'com.aventstack:extentreports:5.0.9'
 
 }
 

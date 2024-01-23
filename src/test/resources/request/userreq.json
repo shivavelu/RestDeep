@@ -1,7 +1,7 @@
 {
-  "id": 500,
-  "first_name": "$fname$",
-  "last_name": "$lname$",
+  "id": 700,
+  "first_name": "ObjMapper_FN",
+  "last_name": "ObjMapper_LN",
   "email": "shreya@kollywood.com",
   "jobs": [
     "actress",
@@ -11,8 +11,8 @@
     "breakfast": "Noodles",
     "lunch": "chappati",
     "dinner": [
-      "dos",
-      "dryfruit"
+      "milk",
+      "nuts"
     ]
   },
   "blockFusters": [
