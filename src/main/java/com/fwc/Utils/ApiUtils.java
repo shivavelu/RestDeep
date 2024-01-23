@@ -1,5 +1,7 @@
 package com.fwc.Utils;
 
+import com.api.builderlambok.Employee;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -50,6 +52,22 @@ public final class ApiUtils {
         }
         return null;
 
+    }
+
+    @SneakyThrows
+    public static String jsonFileToString(String fileName){
+        String json=null;
+        ObjectMapper objectMapper= new ObjectMapper();
+        // getpath from Frameworksingleton
+        File file= new File(FCSingleton.getSInstance().getRequestInputPath() +fileName);
+            JsonNode jsonNode = objectMapper.readTree(file);
+            json=objectMapper.writeValueAsString(jsonNode);
+        return json;
+    }
+    @SneakyThrows
+    public static <T> T jsonStringToObject(String json, Class<T> clazz) {
+        ObjectMapper objectMapper= new ObjectMapper();
+       return objectMapper.readValue(json,clazz);
     }
 
 

@@ -12,7 +12,6 @@ import java.util.List;
 @JsonInclude(value= JsonInclude.Include.NON_EMPTY) // this ignore the attribute if the value is null & empty and Inclue.NON_NULL ignore only NULL value
 // NON_EMPTY ignore both null and empty attribute
 @Builder // should have builder annotation only as builder() travel from here
-
 /*
 Jackson Properties
 //@JsonIgnoreProperties(value = {"first_name"})

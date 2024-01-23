@@ -10,7 +10,7 @@ public class ConPut {
 
     @Test
     public void addActor(ITestContext context){
-        Actor aa= Actor.builder().id(151).first_name("").second_name("kumar").email("aj@kolly.com").build();
+        Actor aa= Actor.builder().id(153).first_name("").second_name("kumar").email("aj@kolly.com").build();
         Response resp=given()
                       .log()
                       .all()
