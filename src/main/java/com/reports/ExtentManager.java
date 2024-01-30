@@ -7,10 +7,10 @@ public final class ExtentManager {
     private ExtentManager(){
 
     }
-    public static ExtentTest getTest(){
+    static ExtentTest getTest(){
         return exTest.get();
     }
-    public static void setExtent(ExtentTest test){
+    static void setExtent(ExtentTest test){
         exTest.set(test);
     }
 }

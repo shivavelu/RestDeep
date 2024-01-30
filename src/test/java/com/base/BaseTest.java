@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 
 public class BaseTest {
 
-    @BeforeSuite
+   /* @BeforeSuite
     public void setUpSuite(){
         ExtentReport.initReports();
     }
@@ -21,10 +21,9 @@ public class BaseTest {
 
     }
 
-
     @AfterSuite
     public void tearDownReport(){
         ExtentReport.tearDownReports();
 
-    }
+    }*/
 }
